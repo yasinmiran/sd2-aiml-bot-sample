@@ -5,6 +5,8 @@ import org.alicebot.ab.utils.IOUtils;
 
 import java.io.File;
 
+import static dev.yasint.http.MyHttpClient.callGeoAPI;
+
 public class Main {
 
     private static final boolean TRACE_MODE = false;
