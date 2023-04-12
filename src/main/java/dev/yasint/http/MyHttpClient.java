@@ -2,7 +2,6 @@ package dev.yasint.http;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dev.yasint.dto.GeoData;
 import dev.yasint.dto.GeoDataAPIResponse;
 
 import java.net.URI;
@@ -44,7 +43,6 @@ public class MyHttpClient {
                         } catch (JsonProcessingException e) {
                             throw new RuntimeException(e);
                         }
-//                        System.out.println(body);
                     })
                     .join();
         } catch (URISyntaxException e) {
